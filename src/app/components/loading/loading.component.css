@@ -1,0 +1,20 @@
+.loading {
+    font-size: 20px;
+    border-right: 4px solid;
+    width: 11.5ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(14), blinking 0.5s infinite step-end alternate;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+
+  @keyframes blinking {
+    50% {
+      border-color: transparent;
+    }
+  }

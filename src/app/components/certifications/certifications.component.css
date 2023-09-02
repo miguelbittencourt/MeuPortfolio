@@ -1,0 +1,40 @@
+img {
+    width: 100px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 20px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    row-gap: 20px;
+    align-items: center;
+    width: 33%;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        grid-template-columns: none;
+        row-gap: 20px;
+    }
+
+    article {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 80%;
+        text-align: justify;
+        column-gap: 20px;
+    }
+}

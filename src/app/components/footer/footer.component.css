@@ -1,5 +1,34 @@
-.footer-content {
-    width: 100%;
-    height: 100%;
-    bottom: 0;
+.language-border {
+    background-color: rgb(43, 101, 189);
+    font-size: 20px;
+    color: white;
+}
+
+.main-text {
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+  }
+
+article {
+  margin: 10px 0 20px;
+}
+
+.links {
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: center;
+column-gap: 20px;
+}
+
+.links svg {
+height: 3em;
+}
+
+.copyright {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
 }
