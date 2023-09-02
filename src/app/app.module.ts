@@ -8,29 +8,31 @@ import { AboutComponent } from './components/about/about.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { CertificationsComponent } from './components/certifications/certifications.component';
-import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FontAwesomeModule, FaIconLibrary  } from '@fortawesome/angular-fontawesome';
+import { LoadingComponent } from './components/loading/loading.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    AboutComponent,
-    SkillsComponent,
-    ExperienceComponent,
-    CertificationsComponent,
-    ContactComponent,
-    FooterComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    FontAwesomeModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        AboutComponent,
+        SkillsComponent,
+        ExperienceComponent,
+        CertificationsComponent,
+        FooterComponent,
+        LoadingComponent
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        FontAwesomeModule
+    ]
 })
-export class AppModule { }
+export class AppModule {
+    FaIconLibrary = FaIconLibrary;
+}
