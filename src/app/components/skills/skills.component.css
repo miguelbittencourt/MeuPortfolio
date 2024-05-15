@@ -39,7 +39,7 @@ ul {
 .barra-progresso {
     width: 100%; /* Defina a largura da barra de carregamento pela metade */
     height: 20px; /* Altura da barra de carregamento */
-    background: linear-gradient(to right, #f51848 0%, #f51848 50%, #ffffff 50%, #ffffff 100%); /* Gradiente linear com duas cores */
+    background: linear-gradient(to right, #f51848 0%, #f51848 75%, #ffffff 75%, #ffffff 100%); /* Gradiente linear com duas cores */
 }
 
 @media screen and (max-width: 1080px) {
